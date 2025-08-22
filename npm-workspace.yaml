@@ -1,0 +1,5 @@
+name: parkly
+workspaces:
+  - client
+  - libs/*
+  - server

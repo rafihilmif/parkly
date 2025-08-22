@@ -1,0 +1,25 @@
+{
+  "name": "parkly",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server",
+    "libs/*"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace client\" \"npm run start:dev --workspace server\"",
+    "dev:client": "npm run dev --workspace client",
+    "dev:server": "npm run start:dev --workspace server",
+    "build": "npm run build --workspaces",
+    "build:client": "npm run build --workspace client",
+    "build:server": "npm run build --workspace server",
+    "start": "npm run start --workspaces",
+    "lint": "npm run lint --workspaces",
+    "test": "npm run test --workspaces",
+    "clean": "rmdir /s /q node_modules & rmdir /s /q client\\node_modules & rmdir /s /q server\\node_modules 2>nul"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
