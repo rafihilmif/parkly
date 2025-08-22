@@ -20,6 +20,10 @@
     "forceConsistentCasingInFileNames": true,
     "noImplicitAny": false,
     "strictBindCallApply": false,
-    "noFallthroughCasesInSwitch": false
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "@parkly/origin-lib": ["../libs/origin-lib/src"],
+      "@parkly/origin-lib/*": ["../libs/origin-lib/src/*"]
+    }
   }
 }

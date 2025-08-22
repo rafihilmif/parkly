@@ -1,5 +1,1 @@
-name: parkly
-workspaces:
-  - client
-  - libs/*
-  - server
+{ 'name': 'parkly', 'workspaces': ['client', 'server', 'libs/*'] }
